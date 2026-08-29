@@ -1,0 +1,11 @@
+
+  [32m[1mVITE[22m v7.3.6[39m  [2mready in [0m[1m89257[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5179[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.90.171.33:[1m5179[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.40:[1m5179[22m/[39m
+[vite] connected.
+[2m6:03:31 p. m.[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m6:03:33 p. m.[22m [36m[1m[vite][22m[39m server restarted.
+[2m6:06:18 p. m.[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m6:06:19 p. m.[22m [36m[1m[vite][22m[39m server restarted.

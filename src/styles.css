@@ -1,0 +1,306 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-display-serif: "Null Free", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-black-900: var(--black-900);
+  --color-black-800: var(--black-800);
+  --color-black-700: var(--black-700);
+  --color-black-600: var(--black-600);
+  --color-black-500: var(--black-500);
+  --color-black-400: var(--black-400);
+  --color-black-300: var(--black-300);
+  --color-black-200: var(--black-200);
+  --color-black-100: var(--black-100);
+  --color-black-50: var(--black-50);
+
+  --color-red-700: var(--red-700);
+  --color-red-600: var(--red-600);
+  --color-red-500: var(--red-500);
+  --color-red-400: var(--red-400);
+  --color-red-300: var(--red-300);
+  --color-red-200: var(--red-200);
+  --color-red-100: var(--red-100);
+  --color-red-50: var(--red-50);
+
+  --color-moli-orange: var(--moli-orange);
+  --color-moli-orange-dark: var(--moli-orange-dark);
+
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-500: var(--navy-500);
+  --color-navy-400: var(--navy-400);
+  --color-navy-300: var(--navy-300);
+  --color-navy-200: var(--navy-200);
+  --color-navy-100: var(--navy-100);
+  --color-navy-50: var(--navy-50);
+
+  --color-plata-600: var(--plata-600);
+  --color-plata-500: var(--plata-500);
+  --color-plata-400: var(--plata-400);
+  --color-plata-300: var(--plata-300);
+  --color-plata-200: var(--plata-200);
+  --color-plata-100: var(--plata-100);
+  --color-plata-50: var(--plata-50);
+
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-border: var(--success-border);
+  --color-error: var(--error);
+  --color-error-bg: var(--error-bg);
+  --color-error-border: var(--error-border);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-border: var(--warning-border);
+  --color-info: var(--info);
+  --color-info-bg: var(--info-bg);
+  --color-info-border: var(--info-border);
+
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.10), 0 4px 8px rgba(0,0,0,0.06);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.06);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* MOLI Brand Palette */
+  --black-900: #000000;
+  --black-800: #1A1A1A;
+  --black-700: #2E2E2E;
+  --black-600: #474747;
+  --black-500: #5E5E5E;
+  --black-400: #767676;
+  --black-300: #909090;
+  --black-200: #B3B3B3;
+  --black-100: #D4D4D4;
+  --black-50: #F0F0F0;
+
+  --red-700: #8B0014;
+  --red-600: #AD0019;
+  --red-500: #D3001F;
+  --red-400: #E6394F;
+  --red-300: #F06A7A;
+  --red-200: #F5A0AA;
+  --red-100: #FCD3D8;
+  --red-50: #FFF0F1;
+
+  --moli-orange: #f97316;
+  --moli-orange-dark: #ea580c;
+
+  --navy-700: #1A235A;
+  --navy-600: #26327A;
+  --navy-500: #324595;
+  --navy-400: #5066B5;
+  --navy-300: #7B8ECC;
+  --navy-200: #A9B6E1;
+  --navy-100: #D4DBF3;
+  --navy-50: #EDF0FA;
+
+  --plata-600: #8A8A8A;
+  --plata-500: #A8A8A8;
+  --plata-400: #CECECE;
+  --plata-300: #DEDEDE;
+  --plata-200: #EBEBEB;
+  --plata-100: #F5F5F5;
+  --plata-50: #FAFAFA;
+
+  --success: #1E8E3E;
+  --success-bg: #E6F4EA;
+  --success-border: #A8DAB5;
+  --error: #D3001F;
+  --error-bg: #FDE8EA;
+  --error-border: #F5A0AA;
+  --warning: #E37B1A;
+  --warning-bg: #FFF3E0;
+  --warning-border: #FFCC80;
+  --info: #324595;
+  --info-bg: #EDF0FA;
+  --info-border: #A9B6E1;
+
+  --background: #FFFFFF;
+  --foreground: var(--black-700);
+
+  --card: oklch(1 0 0);
+  --card-foreground: var(--black-700);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--black-700);
+
+  --primary: var(--red-500);
+  --primary-foreground: #FFFFFF;
+
+  --secondary: var(--navy-500);
+  --secondary-foreground: #FFFFFF;
+
+  --muted: var(--plata-100);
+  --muted-foreground: var(--black-500);
+
+  --accent: var(--black-50);
+  --accent-foreground: var(--black-800);
+
+  --destructive: var(--red-500);
+  --destructive-foreground: #FFFFFF;
+
+  --border: var(--black-100);
+  --input: var(--black-100);
+  --ring: var(--navy-500);
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: var(--black-700);
+  --sidebar-primary: var(--navy-500);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: var(--black-50);
+  --sidebar-accent-foreground: var(--black-800);
+  --sidebar-border: var(--black-100);
+  --sidebar-ring: var(--navy-500);
+}
+
+.dark {
+  --background: var(--black-800);
+  --foreground: var(--plata-100);
+  --card: var(--black-700);
+  --card-foreground: var(--plata-100);
+  --popover: var(--black-700);
+  --popover-foreground: var(--plata-100);
+  --primary: var(--red-400);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--navy-400);
+  --secondary-foreground: #FFFFFF;
+  --muted: var(--black-600);
+  --muted-foreground: var(--black-300);
+  --accent: var(--black-600);
+  --accent-foreground: var(--plata-100);
+  --border: rgba(255,255,255,0.1);
+  --input: rgba(255,255,255,0.15);
+  --sidebar: var(--black-800);
+  --sidebar-foreground: var(--plata-100);
+  --sidebar-accent: var(--black-600);
+  --sidebar-accent-foreground: var(--plata-100);
+  --sidebar-border: rgba(255,255,255,0.1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+
+  :focus-visible {
+    outline: 2.5px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+.hero-kenburns {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-bg-float {
+  position: absolute;
+  inset: -8%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  animation: hero-kenburns 20s ease-in-out infinite;
+}
+
+@keyframes hero-kenburns {
+  0% {
+    transform: scale(1.15) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: scale(1.3) translate3d(-2%, -1.5%, 0);
+  }
+  50% {
+    transform: scale(1.22) translate3d(2%, 1%, 0);
+  }
+  75% {
+    transform: scale(1.32) translate3d(-1%, 2%, 0);
+  }
+  100% {
+    transform: scale(1.15) translate3d(0, 0, 0);
+  }
+}
+
+.hero-dashboard-float {
+  will-change: transform;
+  animation: hero-dashboard-float 7s ease-in-out infinite alternate;
+}
+
+@keyframes hero-dashboard-float {
+  0% {
+    transform: translateY(0) rotate(0.4deg);
+  }
+  100% {
+    transform: translateY(-14px) rotate(-0.4deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-float,
+  .hero-dashboard-float {
+    animation: none;
+  }
+}

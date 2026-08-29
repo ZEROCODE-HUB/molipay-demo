@@ -1,0 +1,20 @@
+node.exe : Error [ERR_MODULE_NOT_FOUND]: Cannot find module 
+'D:\Zerocode\PROYECTOS\molipay-demo\MoliPay-Enterprises\dist\server\server.js' imported from D:\Zerocode\PROYECTOS\moli
+pay-demo\MoliPay-Enterprises\node_modules\@tanstack\start-plugin-core\dist\esm\vite\preview-server-plugin\plugin.js
+En D:\Zerocode\PROYECTOS\molipay-demo\MoliPay-Enterprises\node_modules\.bin\vite.ps1: 24 Car cter: 5
++     & "node$exe"  "$basedir/../vite/bin/vite.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error [ERR_MODU...lugin\plugin.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:866:10)
+    at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38)
+    at nextStep (node:internal/modules/customization_hooks:189:26)
+    at De 
+(file:///D:/Zerocode/PROYECTOS/molipay-demo/MoliPay-Enterprises/node_modules/@tailwindcss/node/dist/index.mjs:1:539)
+    at nextStep (node:internal/modules/customization_hooks:189:26)
+    at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:755:14)
